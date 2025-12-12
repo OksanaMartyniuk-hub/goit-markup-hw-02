@@ -1,18 +1,28 @@
-/* ===== Header ===== */
+/* ===== Base ===== */
 
 body {
-  font-family: "Roboto", "Helvetica Neue", "Verdana", sans-serif;
-  color: #2e2f42;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
   font-size: 16px;
-  margin-left: 20px;
+  background-color: #fff;
 }
 
 ul,
 ol {
   list-style-type: none;
-  padding-left: 10;
+  padding-left: 10px;
   margin: 0;
 }
+
+.header {
+  padding: 24px 0;
+}
+
+address {
+  font-style: normal;
+}
+
+/* ===== Logo ===== */
 
 .logo {
   font-weight: 700;
@@ -21,7 +31,6 @@ ol {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 25px;
 }
 
 .logo-accent {
@@ -30,50 +39,36 @@ ol {
 
 .logo:hover,
 .logo:focus {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 
 /* ===== Navigation ===== */
 
 .header-nav-container > a {
   color: #2e2f42;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 0px;
   text-decoration: none;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 16px;
   color: #2e2f42;
-  padding: 4px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #4d5ae5;
+  color: #404bbf;
   outline: none;
 }
 
-.header-nav-container {
-  margin-bottom: 25px;
-}
-
-.nav-list a {
-  font-weight: 500;
-  font-size: 16px;
-  color: #2e2f42;
-  text-decoration: none;
-}
-
-.header-contacts {
-  margin-bottom: 25px;
-}
+/* ===== Contacts ===== */
 
 .contacts-list a {
   color: #434455;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -81,11 +76,10 @@ ol {
 
 .contact-link:hover,
 .contact-link:focus {
-  color: #4d5ae5;
-  outline: none;
+  color: #404bbf;
 }
 
-/* ===== Hero section ===== */
+/* ===== Hero ===== */
 
 .hero {
   background-color: #2e2f42;
@@ -107,6 +101,7 @@ ol {
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
@@ -130,11 +125,12 @@ ol {
 .feature-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
 .feature-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -155,26 +151,9 @@ ol {
   text-align: center;
   color: #2e2f42;
 }
+
 .team-card {
   background-color: #ffffff;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-align: center;
-}
-
-.team-role {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-align: center;
 }
 
 /* ===== Footer ===== */
@@ -195,13 +174,38 @@ ol {
 
 .footer-logo:hover,
 .footer-logo:focus {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 
 .footer-text {
   color: #f4f4fd;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* ===== Portfolio ===== */
+
+.portfolio-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-category {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
